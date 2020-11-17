@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+
+body{
+	background: url(Asset/background2.jpg);
+	min-height: 3000px;
+	background-size: cover;
+	background-position: center;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to top, #003d66, transparent);
+}
+
+.header:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #001f33, transparent);
+	z-index: 10000;
+}
+
+.header img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+#city{
+	z-index: 2;
+}
+
+#textName{
+	position: relative;
+	color: #0e3742;
+	font-size: 10em;
+	z-index: 1;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 100px;
+	outline: none;
+	letter-spacing: 12px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+	line-height: 0.70em;
+	animation: animate 5s linear infinite; 
+}
+
+@keyframes animate
+{
+	0%,18%,20%,50.1%,60%,60.1%,65.1%,80%,90.1%,92%
+	{
+		color: #0e3742;
+		text-shadow: none;
+	}
+	18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+	{
+		color: #fff;
+		text-shadow: 0 0 10px #1aa3ff,
+		0 0 20px #1aa3ff,
+		0 0 40px #1aa3ff,
+		0 0 80px #1aa3ff,
+		0 0 160px #1aa3ff;
+	}
+}
+
+
+.headingProfile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.h1Profile{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: consolas;
+}
+
+.h1Profile span{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	animation: animateProfile 2s linear infinite;
+}
+
+.h1Profile span:nth-child(1){
+	animation-delay: 0s;
+}
+
+.h1Profile span:nth-child(2){
+	animation-delay: 0.25s;
+}
+
+.h1Profile span:nth-child(3){
+	animation-delay: 0.5s;
+}
+
+.h1Profile span:nth-child(4){
+	animation-delay: 0.75s;
+}
+
+.h1Profile span:nth-child(5){
+	animation-delay: 1s;
+}
+
+.h1Profile span:nth-child(6){
+	animation-delay: 1.25s;
+}
+
+.h1Profile span:nth-child(7){
+	animation-delay: 1.5s;
+}
+
+@keyframes animateProfile
+{
+	0%,100%
+	{
+		color: #fff;
+		filter: blur(2px);
+		text-shadow: 0 0 10px #00b3ff,
+					0 0 20px #00b3ff,
+					0 0 40px #00b3ff,
+					0 0 80px #00b3ff,
+					0 0 120px #00b3ff,
+					0 0 200px #00b3ff,
+					0 0 300px #00b3ff,
+	}
+	5%,95%{
+		color: #80d4ff;
+		filter: blur(0px);
+		text-shadow: 0 0 10px none;
+	}
+}
+
+
+#profile .containerProfile{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	align-items: center;
+	padding: 10px 0;
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+	margin-left: 80px;
+	margin-right: 80px;
+	border-bottom: 1px solid #fff;
+}
+
+#profile .containerProfile span{
+	font-family: "Dosis", sans-serif;
+	padding: 10px;
+}
+
+.contactMe{
+	text-align: center;
+	justify-content: center;
+	font-family: "Dosis", sans-serif;
+	margin-top: 100px;
+}
+
+.contactMe h2{
+	color: #fff;
+	font-family: 'dosis', sans-serif;
+	font-size: 1.7rem;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+
+.sosmed{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30vh;
+	margin-left: 80px;
+}
+
+.ulsosmed{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
+
+.ulsosmed .lisosmed{
+	position: relative;
+	list-style: none;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.ulsosmed .lisosmed .wa .fa{
+	font-size: 6em;
+	color: #258e25;
+}
+
+.ulsosmed .lisosmed .github .fa{
+	font-size: 6em;
+	color: #fff;
+}
+
+
+.ulsosmed .lisosmed .linkedin .fa{
+	font-size: 6em;
+	color: #1f3d7a;
+}
+
+
+.ulsosmed .lisosmed .email .fa{
+	font-size: 6em;
+	color: #800000;
+}
+
+
+
+.centerSkills{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,10%);
+	padding: 20px;
+	background: rgba(0, 77, 77, 0.6);
+	box-sizing: border-box;
+	box-shadow: 0 5px 30px #fff;
+	border-radius: 10px;
+}
+
+.skillsBox{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20px 0;
+	font-family: consolas;
+}
+
+.skillsBox p{
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0 0 10px;
+	padding: 0;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.skillsBox p:nth-child(2){
+	position: relative;
+	float: right;
+	top: -25px;
+}
+
+.skills{
+	background: #262626;
+	padding: 4px;
+	box-sizing: border-box;
+	border: 1px solid #0fffb7;
+	border-radius: 3px;
+}
+
+.skills_level{
+	background: #0fffb7;
+	width: 100%;
+	height: 10px;
+}
+
+.container{
+	width: 1060px;
+	min-height: 50px;
+	background: #1e1e15;
+	margin: 15px; 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 150px;
+	
+}
+
+.container .box{
+	position: relative;
+	width: 510px;
+	height: 320px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.container .box .imgBox{
+	position: relative;
+}
+
+img{
+	object-fit: cover;
+	width: 510px;
+	height: 320px;
+}
+
+.container .box .imgBox img{
+	max-width: 100%;
+	transition: transform 2s;
+}
+
+.container .box:hover .imgBox img{
+	transform: scale(1.2);
+}
+
+.container .box .detail{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+
+.container .box:hover .detail{
+	transform: scaleY(1);
+}
+
+.container .box .detail .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+
+.container .box .detail .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #fff;
+}
+
+.container .box .detail .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	font-size: 15px;
+	color: #b6b696;
+}
+
+footer{
+	background: #000000;
+	text-align: center;
+	padding: 50px;
+}
+
+footer span{
+	font-family: consolas;
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: #fff;
+}
